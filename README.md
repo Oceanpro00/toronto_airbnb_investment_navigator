@@ -107,13 +107,27 @@ Our focused EDA will examine:
    - Revenue potential estimation
    - Property value to rental income ratios
 
+## Data Preparation
+
+### Raw Data Handling
+Before starting analysis, the compressed data files need to be extracted:
+
+1. Navigate to the `data/raw/` directory
+2. Extract the compressed files:
+   - `listings.csv.gz` → `listings.csv`
+   - `calendar.csv.gz` → `calendar.csv`
+   - `reviews.csv.gz` → `reviews.csv`
+3. The GeoJSON file (`neighbourhoods.geojson`) can be used directly without extraction
+
+Note: The original compressed files are used due to size constraints. After extraction, ensure your system has sufficient memory to process these large datasets.
+
 ## Project Structure
 
 ```
 toronto_airbnb_investment_navigator/
 │
 ├── data/
-│   ├── raw/                 # Original datasets
+│   ├── raw/                 # Original datasets (compressed)
 │   └── processed/           # Cleaned datasets
 │
 ├── notebooks/
@@ -150,11 +164,11 @@ toronto_airbnb_investment_navigator/
 2. **Investment Analysis Summary**
    - Top neighborhoods ranked by ROI potential
    - Investment recommendations table
-
+   
 3. **Documentation & Presentation**
    - Methodology explanation
    - Stakeholder-focused findings
-  
+
    ![Investment Analysis Example](https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1200)
 ---
 
