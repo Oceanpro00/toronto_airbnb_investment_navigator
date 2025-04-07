@@ -1,0 +1,4 @@
+# Ignore specific raw data CSV files
+/data/raw/reviews.csv
+/data/raw/listings.csv
+/data/raw/calendar.csv
