@@ -133,6 +133,11 @@ toronto_airbnb_investment_navigator/
 │
 ├── results/                 # Output files and visualizations
 │
+├── individual_work/         # Individual team member work
+│   ├── sean/                # Sean's individual work files
+│   ├── bryan/               # Bryan's individual work files
+│   └── jitesh/              # Jitesh's individual work files
+│
 └── README.md
 ```
 
@@ -149,9 +154,8 @@ toronto_airbnb_investment_navigator/
 3. **Documentation & Presentation**
    - Methodology explanation
    - Stakeholder-focused findings
-   
+  
    ![Investment Analysis Example](https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1200)
-   
 ---
 
 *This project was created as part of the University of Toronto Data Analytics Bootcamp, 2025.*
