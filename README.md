@@ -145,13 +145,13 @@ toronto_airbnb_investment_navigator/
 2. **Investment Analysis Summary**
    - Top neighborhoods ranked by ROI potential
    - Investment recommendations table
-   
-   ![Investment Analysis Example](https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1200)
 
 3. **Documentation & Presentation**
    - Methodology explanation
    - Stakeholder-focused findings
-
+   
+   ![Investment Analysis Example](https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1200)
+   
 ---
 
 *This project was created as part of the University of Toronto Data Analytics Bootcamp, 2025.*
