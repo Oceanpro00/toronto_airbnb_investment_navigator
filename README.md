@@ -2,6 +2,18 @@
 
 ![Toronto Skyline](https://images.unsplash.com/photo-1517090504586-fde19ea6066f?auto=format&fit=crop&q=80&w=1200)
 
+## Table of Contents
+- [Project Overview](#project-overview)
+- [Team Members](#team-members)
+- [Stakeholders: Real Estate Investors](#stakeholders-real-estate-investors)
+- [Data Sources](#data-sources)
+- [Machine Learning Approach](#machine-learning-approach)
+- [Project Timeline](#project-timeline-14-days)
+- [Exploratory Data Analysis Plan](#exploratory-data-analysis-plan)
+- [Data Preparation](#data-preparation)
+- [Project Structure](#project-structure)
+- [Key Deliverables](#key-deliverables)
+
 ## Project Overview
 
 The **Toronto AirBnB Investment Navigator** is a data-driven tool that helps real estate investors identify high-potential neighborhoods for short-term rental investments in Toronto. By analyzing Inside AirBnB data and integrating property values, this tool provides actionable insights on neighborhood investment potential and expected returns for the Toronto short-term rental market.
