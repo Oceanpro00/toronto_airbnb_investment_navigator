@@ -152,6 +152,9 @@ toronto_airbnb_investment_navigator/
 │   ├── bryan/               # Bryan's individual work files
 │   └── jitesh/              # Jitesh's individual work files
 │
+├── documentation/           # Project Documentation
+│   ├── TAIN_project_outline/  # Initial Project Outline
+│
 └── README.md
 ```
 
