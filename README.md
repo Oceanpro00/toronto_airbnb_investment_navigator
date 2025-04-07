@@ -153,7 +153,7 @@ toronto_airbnb_investment_navigator/
 │   └── jitesh/              # Jitesh's individual work files
 │
 ├── documentation/           # Project Documentation
-│   ├── TAIN_project_outline/  # Initial Project Outline
+│   └── TAIN_project_outline/  # Initial Project Outline
 │
 └── README.md
 ```
