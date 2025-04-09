@@ -16,7 +16,7 @@
 
 ## Project Overview
 
-The **Toronto AirBnB Pricing Assistant & Profit Maximizer (TAPAM)** is a data-driven tool that helps AirBnB hosts and property investors optimize their rental pricing strategy in Toronto. By analyzing Inside AirBnB data and identifying key amenity value drivers, this tool provides actionable insights on optimal pricing, amenity recommendations, and stay duration strategy for the Toronto short-term rental market.
+The **Toronto AirBnB Pricing Assistant & Profit Maximizer (TAPA)** is a data-driven tool that helps AirBnB hosts and property investors optimize their rental pricing strategy in Toronto. By analyzing Inside AirBnB data and identifying key amenity value drivers, this tool provides actionable insights on optimal pricing, amenity recommendations, and stay duration strategy for the Toronto short-term rental market.
 
 This project applies machine learning techniques to recommend optimal pricing, identify high-value amenities, and suggest appropriate stay duration strategies for property owners in Toronto's competitive AirBnB market.
 
