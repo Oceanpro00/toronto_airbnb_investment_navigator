@@ -1,4 +1,4 @@
-# Toronto AirBnB Pricing Assistant & Profit Maximizer (TAPAM)
+# Toronto AirBnB Pricing Assistant (TAPA)
 
 ![Toronto Skyline](https://images.unsplash.com/photo-1517090504586-fde19ea6066f?auto=format&fit=crop&q=80&w=1200)
 
