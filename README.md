@@ -1,11 +1,11 @@
-# Toronto AirBnB Investment Navigator
+# Toronto AirBnB Pricing Assistant (TAPA)
 
 ![Toronto Skyline](https://images.unsplash.com/photo-1517090504586-fde19ea6066f?auto=format&fit=crop&q=80&w=1200)
 
 ## Table of Contents
 - [Project Overview](#project-overview)
 - [Team Members](#team-members)
-- [Stakeholders: Real Estate Investors](#stakeholders-real-estate-investors)
+- [Stakeholders](#stakeholders)
 - [Data Sources](#data-sources)
 - [Machine Learning Approach](#machine-learning-approach)
 - [Project Timeline](#project-timeline-14-days)
@@ -16,25 +16,26 @@
 
 ## Project Overview
 
-The **Toronto AirBnB Investment Navigator** is a data-driven tool that helps real estate investors identify high-potential neighborhoods for short-term rental investments in Toronto. By analyzing Inside AirBnB data and integrating property values, this tool provides actionable insights on neighborhood investment potential and expected returns for the Toronto short-term rental market.
+The **Toronto AirBnB Pricing Assistant & Profit Maximizer (TAPAM)** is a data-driven tool that helps AirBnB hosts and property investors optimize their rental pricing strategy in Toronto. By analyzing Inside AirBnB data and identifying key amenity value drivers, this tool provides actionable insights on optimal pricing, amenity recommendations, and stay duration strategy for the Toronto short-term rental market.
 
-This project applies machine learning techniques to classify Toronto neighborhoods by investment potential, identify factors driving rental performance, and calculate return on investment metrics for property investors.
+This project applies machine learning techniques to recommend optimal pricing, identify high-value amenities, and suggest appropriate stay duration strategies for property owners in Toronto's competitive AirBnB market.
 
 ## Team Members
 - **Sean Schallberger**
 - **Bryan Carney**
 - **Jitesh Makan**
 
-## Stakeholders: Real Estate Investors
+## Stakeholders
 
 Our tool is designed specifically for:
-- **Individual property investors** seeking to purchase AirBnB properties
-- **Current AirBnB hosts** looking to expand their portfolio
+- **Current AirBnB hosts** looking to optimize pricing and amenities
+- **Potential investors** evaluating rental strategies
+- **Property owners** considering conversion to AirBnB rentals
 
 Our stakeholders need:
-- Clear identification of high-ROI neighborhoods
-- Understanding of property value to rental income ratios
-- Data-driven investment recommendations
+- Data-driven price recommendations
+- Understanding of amenity value impact
+- Guidance on short-term vs. long-term stay strategy
 
 ## Data Sources
 
@@ -46,80 +47,113 @@ Our analysis uses data from:
    - `reviews.csv.gz` - Guest feedback and ratings
    - `neighbourhoods.geojson` - Geographic boundaries
 
-2. **Toronto Property Values**:
-   - Toronto Real Estate Board neighborhood price data
-
 ## Machine Learning Approach
 
-Our analysis will use a simplified set of models to provide clear investment insights:
+Our analysis will use a simplified set of models to provide clear pricing insights:
 
-| Investor Need | ML Model | Output |
+| Host/Investor Need | ML Model | Output |
 |---------------|----------|--------|
-| Identify investment-worthy neighborhoods | **K-means Clustering** | Neighborhood categories by investment potential |
-| Understand rental performance | **Linear Regression** | Key factors affecting rental income |
-| Compare investment options | **Investment Score Algorithm** | ROI ranking for neighborhoods |
+| Optimize property pricing | **Linear Regression** | Recommended price range |
+| Identify high-value amenities | **Feature Importance Analysis** | Amenity value ranking |
+| Choose stay duration strategy | **Comparative Analysis** | Short vs. long-term recommendation |
 
 ### Model Details 
 
-1. **K-means Clustering**
-   - **Purpose**: Group neighborhoods by AirBnB performance
-   - **Features**: Average price, occupancy rate, review scores
-   - **Output**: Investment potential categories (High, Medium, Low)
+1. **Linear Regression (Price Prediction)**
+   - **Purpose**: Determine optimal pricing for properties
+   - **Features**: Property type, location, amenities, accommodations
+   - **Output**: Recommended price range
 
-2. **Linear Regression**
-   - **Purpose**: Identify factors that influence rental income
-   - **Features**: Property size, amenities, location
-   - **Output**: Feature importance for rental success
+2. **Feature Importance Analysis**
+   - **Purpose**: Identify amenities that increase property value
+   - **Features**: Binary amenity indicators
+   - **Output**: Ranked list of price-boosting amenities
 
-3. **Investment Score Algorithm**
-   - **Purpose**: Rank neighborhoods by ROI potential
-   - **Formula**: (Avg. Revenue / Property Value) × Occupancy Rate
+3. **Stay Duration Analysis**
+   - **Purpose**: Recommend short vs. long-term stay strategy
+   - **Method**: Comparative neighborhood performance analysis
+   - **Output**: Stay length recommendation by property type and location
 
 ## Project Timeline (14 Days)
 
 ### Pre-Project Setup
 - Download all datasets from Inside AirBnB Toronto
-- Acquire Toronto property value data
+- Perform initial data exploration and cleaning
 
-### Sprint 1: Data Cleaning & Exploration (5 days)
-**Tasks**:
-- **All Team**: Jointly clean and explore datasets during Monday class
-- **Sean**: Focus on listings data analysis
-- **Bryan**: Handle property value integration
-- **Jitesh**: Analyze booking and review patterns
+### Week 1: Data Engineering & Model Development (7 days)
+**Days 1-2: Project Setup & Data Cleaning**
+- Create GitHub repository with proper structure
+- Standardize property types to 5 key categories
+- Extract and categorize amenities
+- Handle missing values in essential fields
 
-**Checkpoint (Friday)**: Complete data cleaning and initial analysis
+**Days 3-4: Feature Engineering & Initial Modeling**
+- Create binary amenity features
+- Implement stay length classification
+- Begin developing price prediction model
+- Analyze amenity patterns
 
-### Sprint 2: Modeling & Visualization (5 days)
-**Tasks**:
-- **Sean**: Implement K-means clustering
-- **Bryan**: Develop linear regression and ROI calculation
-- **Jitesh**: Create interactive map visualization
+**Days 5-7: Model Development & Optimization**
+- Finalize price prediction model
+- Extract amenity importance values
+- Develop stay length recommendation logic
+- Begin documentation and visualization
 
-**Checkpoint (Friday)**: Complete core models and visualization framework
+### Week 2: Implementation & Presentation (7 days)
+**Days 8-9: Analysis & Visualization**
+- Create key visualizations
+- Implement recommendation function
+- Document model performance
+- Begin integration of components
 
-### Sprint 3: Integration & Presentation (4 days)
-**Tasks**:
-- **All Team**: Finalize dashboard and documentation
-- **All Team**: Prepare and practice presentation
+**Days 10-12: Testing & Documentation**
+- Test with various property scenarios
+- Complete GitHub documentation
+- Prepare presentation materials
+- Create demonstration examples
 
-**Final Presentation**: Deliver project presentation
+**Days 13-14: Finalization & Presentation**
+- Finalize all components
+- Complete presentation slides
+- Practice presentation
+- Submit final project
 
 ## Exploratory Data Analysis Plan
 
 Our focused EDA will examine:
 
-1. **Neighborhood Analysis**
-   - Property distribution across Toronto
-   - Price ranges by neighborhood
-   - Review ratings geographical patterns
+1. **Property Landscape**
+   - Most common property types across Toronto
+   - Price trends by property type and neighborhood
+   - Popular amenities and how often they appear together
 
-2. **Financial Analysis**
-   - Occupancy rates calculation
-   - Revenue potential estimation
-   - Property value to rental income ratios
+2. **Stay Duration Insights**
+   - Trends in short-term vs. long-term rentals
+   - Neighborhood preferences for stay length
+   - Occupancy patterns by rental type
+
+3. **Key Pricing Drivers**
+   - Amenities that influence pricing
+   - Neighborhood impact on nightly rates
+   - How guest capacity affects price
 
 ## Data Preparation
+
+### Technical Implementation
+
+1. **Property Type Standardization**:
+   - Reduce 50+ property types to 5 clear categories
+   - Map all properties to standardized types
+
+2. **Amenity Processing**:
+   - Extract amenities from JSON arrays
+   - Identify 15-20 most valuable/common amenities
+   - Create binary feature matrix
+
+3. **Stay Strategy Classification**:
+   - Categorize properties as short or long-term focused
+   - Calculate occupancy rates by strategy
+   - Identify neighborhood patterns
 
 ### Raw Data Handling
 Before starting analysis, the compressed data files need to be extracted:
@@ -136,55 +170,52 @@ Note: The original compressed files are used due to size constraints. After extr
 ## Project Structure
 
 ```
-toronto_airbnb_investment_navigator/
+toronto_airbnb_pricing_assistant/
 │
 ├── data/
 │   ├── raw/                 # Original datasets (compressed)
 │   └── processed/           # Cleaned datasets
 │
 ├── notebooks/
-│   ├── 1_data_cleaning.ipynb
-│   ├── 2_exploratory_analysis.ipynb
-│   ├── 3_modeling.ipynb
-│   └── 4_visualization.ipynb
+│   ├── 1_data_prep.ipynb    # Data cleaning and feature engineering
+│   ├── 2_modeling.ipynb     # Price prediction and feature importance
+│   ├── 3_analysis.ipynb     # Stay length analysis and recommendations
+│   └── 4_demo.ipynb         # User input and recommendation examples
 │
 ├── src/
-│   ├── data_processing.py   # Data cleaning functions
-│   ├── modeling.py          # ML model implementation
-│   └── visualization.py     # Map code
+│   ├── data_prep.py         # Basic data processing functions
+│   └── modeling.py          # Model and prediction functions
 │
-├── app/
-│   ├── static/              # CSS and JavaScript
-│   └── templates/           # HTML files
+├── results/                 # Outputs and visualizations
 │
-├── results/                 # Output files and visualizations
-│
-├── individual_work/         # Individual team member work
+├── individual_work/         # Team member contributions
 │   ├── sean/                # Sean's individual work files
 │   ├── bryan/               # Bryan's individual work files
 │   └── jitesh/              # Jitesh's individual work files
 │
-├── documentation/           # Project Documentation
-│   └── TAIN_project_outline/  # Initial Project Outline
-│
+├── requirements.txt
 └── README.md
 ```
 
 ## Key Deliverables
 
-1. **Interactive Toronto Investment Map**
-   - Color-coded neighborhoods by investment potential
-   - Key metrics on hover/click
+1. **Pricing Recommendation Tool**
+   - Suggested price range based on property features
+   - Property type categorization
 
-2. **Investment Analysis Summary**
-   - Top neighborhoods ranked by ROI potential
-   - Investment recommendations table
+2. **Amenity Value Analysis**
+   - Top 3 high-value amenities to add
+   - Estimated price impact for each
+
+3. **Stay Strategy Guidance**
+   - Recommended minimum stay approach
+   - Supporting neighborhood data
    
-3. **Documentation & Presentation**
+4. **Documentation & Presentation**
    - Methodology explanation
    - Stakeholder-focused findings
 
-   ![Investment Analysis Example](https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1200)
+   ![Pricing Analysis Example](https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1200)
 ---
 
 *This project was created as part of the University of Toronto Data Analytics Bootcamp, 2025.*
