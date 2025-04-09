@@ -1,4 +1,4 @@
-# Toronto AirBnB Pricing Assistant (TAPA)
+# Toronto AirBnB Pricing Assistant & Profit Maximizer (TAPAM)
 
 ![Toronto Skyline](https://images.unsplash.com/photo-1517090504586-fde19ea6066f?auto=format&fit=crop&q=80&w=1200)
 
@@ -187,6 +187,10 @@ toronto_airbnb_pricing_assistant/
 │   └── modeling.py          # Model and prediction functions
 │
 ├── results/                 # Outputs and visualizations
+│
+├── documentation/           # Project documentation
+│   ├── project_outline.docx # Initial project planning document
+│   └── sprint_plan.docx     # Sprint structure and ticket details
 │
 ├── individual_work/         # Team member contributions
 │   ├── sean/                # Sean's individual work files
