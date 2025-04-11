@@ -177,10 +177,9 @@ toronto_airbnb_pricing_assistant/
 │   └── processed/           # Cleaned datasets
 │
 ├── notebooks/
-│   ├── 1_data_prep.ipynb    # Data cleaning and feature engineering
-│   ├── 2_modeling.ipynb     # Price prediction and feature importance
-│   ├── 3_analysis.ipynb     # Stay length analysis and recommendations
-│   └── 4_demo.ipynb         # User input and recommendation examples
+│   ├── 1_data_cleaning.ipynb    # Data cleaning and feature engineering
+│   ├── 2_feature_extraction.ipynb     # feature extraction finalizing Feature Matrix
+│   └── 3_modeling.ipynb     # ML Model Creation and Optimization
 │
 ├── src/
 │   ├── data_prep.py         # Basic data processing functions
