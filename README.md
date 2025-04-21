@@ -15,6 +15,7 @@
 - [Repository Structure](#repository-structure)
 - [Frontend Interface](#frontend-interface)
 - [Team Members](#team-members)
+- [Data Attribution](#data-attribution)
 
 ## Project Overview
 
@@ -176,7 +177,6 @@ toronto_airbnb_pricing_assistant/
 └── README.md                 # Project documentation
 ```
 
-
 ## Frontend Interface
 
 Our application features a user-friendly web interface hosted on GitHub Pages. The interface connects to models stored in an Amazon S3 bucket, allowing users to:
@@ -280,6 +280,18 @@ These are the core libraries needed to run the notebooks and reproduce the analy
 - **Sean Schallberger**
 - **Bryan Carney**
 - **Jitesh Makan**
+
+## Data Attribution
+
+This project uses data from Inside AirBnB (https://insideairbnb.com/get-the-data/). Inside AirBnB is an independent, non-commercial set of tools and data that allows you to explore how Airbnb is being used in cities around the world.
+
+The data is provided under a Creative Commons Attribution 4.0 International License (CC BY 4.0). According to this license:
+- You are free to share and adapt the data for any purpose, even commercially
+- You must give appropriate credit, provide a link to the license, and indicate if changes were made
+
+For more information about the CC BY 4.0 license, please visit: https://creativecommons.org/licenses/by/4.0/
+
+We have modified and processed the original data to create our machine learning models and applications.
 
 ---
 
