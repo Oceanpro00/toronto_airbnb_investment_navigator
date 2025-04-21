@@ -175,7 +175,7 @@ toronto_airbnb_pricing_assistant/
 │
 └── README.md                 # Project documentation
 ```
-```
+
 
 ## Frontend Interface
 
