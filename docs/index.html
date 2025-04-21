@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toronto Airbnb Predictor</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Toronto Airbnb Predictor</h1>
+            <p class="subtitle">Estimate your listing's price, revenue & occupancy</p>
+        </header>
+        
+        <div class="card-container">
+            <div class="card form-card">
+                <form id="prediction-form">
+                    <div class="form-section">
+                        <h2><i class="fas fa-map-marker-alt"></i> Location & Property</h2>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="neighborhood">Neighborhood</label>
+                                <div class="select-wrapper">
+                                    <input type="text" id="neighborhood-search" class="search-input" placeholder="Search neighborhood...">
+                                    <select id="neighborhood" name="neighborhood" required>
+                                        <option value="">Select Neighborhood</option>
+                                        <!-- Options populated by JavaScript -->
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="property_type">Property Type</label>
+                                <div class="select-wrapper">
+                                    <input type="text" id="property-search" class="search-input" placeholder="Search property type...">
+                                    <select id="property_type" name="property_type" required>
+                                        <option value="">Select Property Type</option>
+                                        <!-- Options populated by JavaScript -->
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="room_type">Room Type</label>
+                                <select id="room_type" name="room_type" required>
+                                    <option value="">Select Room Type</option>
+                                    <!-- Options populated by JavaScript -->
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h2><i class="fas fa-home"></i> Property Details</h2>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="bedrooms">Bedrooms</label>
+                                <input type="number" id="bedrooms" name="bedrooms" min="0" value="1">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="beds">Beds</label>
+                                <input type="number" id="beds" name="beds" min="0" value="1">
+                            </div>
+                        
+                            <div class="form-group">
+                                <label for="bathrooms">Bathrooms</label>
+                                <input type="number" id="bathrooms" name="bathrooms" min="0" step="0.5" value="1">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="accommodates">Accommodates</label>
+                                <input type="number" id="accommodates" name="accommodates" min="1" value="2">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-section amenities-section">
+                        <h2><i class="fas fa-concierge-bell"></i> Amenities</h2>
+                        <p class="helper-text">Select all amenities you offer (click boxes to select)</p>
+                        
+                        <div id="amenities-container">
+                            <!-- Amenities will be populated by JavaScript in categories -->
+                            <div class="loading">Loading amenities...</div>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="submit-btn">
+                        <i class="fas fa-calculator"></i> Calculate Predictions
+                    </button>
+                </form>
+            </div>
+
+            <div id="results" class="card hidden">
+                <h2><i class="fas fa-chart-line"></i> Prediction Results</h2>
+                
+                <div class="results-grid">
+                    <div class="result-card">
+                        <div class="result-icon">
+                            <i class="fas fa-tag"></i>
+                        </div>
+                        <h3>Price</h3>
+                        <div class="result-value">$<span id="price-value">0</span></div>
+                        <div class="result-label">per night</div>
+                    </div>
+                    
+                    <div class="result-card">
+                        <div class="result-icon">
+                            <i class="fas fa-dollar-sign"></i>
+                        </div>
+                        <h3>Revenue</h3>
+                        <div class="result-value">$<span id="revenue-value">0</span></div>
+                        <div class="result-label">monthly estimate</div>
+                    </div>
+                    
+                    <div class="result-card">
+                        <div class="result-icon">
+                            <i class="fas fa-calendar-check"></i>
+                        </div>
+                        <h3>Occupancy</h3>
+                        <div class="result-value"><span id="occupancy-value">0</span>%</div>
+                        <div class="result-label">average rate</div>
+                    </div>
+                </div>
+                
+                <div class="property-details">
+                    <i class="fas fa-home"></i> <span id="property-details"></span>
+                </div>
+            </div>
+        </div>
+
+        <div id="error" class="hidden">
+            <p></p>
+        </div>
+
+        <footer>
+            <p>© 2025 Toronto Airbnb Predictor | Using real Toronto market data</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
